@@ -16,5 +16,3 @@ let fizzBuzz = (n1, n2) => {
 // fizzBuzz(2, 5)
 // fizzBuzz(2, 7)
 fizzBuzz(3, 5)
-
-
