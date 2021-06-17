@@ -53,7 +53,7 @@ conta.saque(800) // Fazendo o saque
 conta.deposito(-800) // Testando o deposito negativo
 conta.extrato() // Verificando o extrato
 conta.deposito(2000) // Fazendo o deposito
-conta.saque(-1000) // Fazendo o saque
+conta.saque(-1000) // Testando saque negativo
 conta.extrato() // Verificando o extrato
 
 
