@@ -54,27 +54,6 @@ function Conta(numeroDaConta, saldo, nomeDoTitular) {
     // }
     
 }
-// let conta1 = new Conta(321654, 6000, "Joaozinho")
-// let conta2 = new Conta(456987, 90000, "Mariasinha")
-
-// console.log("Acessando os dados da conta1")
-// console.log(conta1.numeroDaConta)
-// console.log(conta1.saldo)
-// console.log(conta1.nomeDoTitular)
-// console.log("\nAcessando os dados da conta2")
-// console.log(conta2.numeroDaConta)
-// console.log(conta2.saldo)
-// console.log(conta2.nomeDoTitular)
-// console.log("\nAcessar os métodos utilizando a conta1")
-// conta1.deposito(800) // Fazendo depósito
-// conta1.saque(500)    // Fazendo saque
-// conta1.deposito(-8000) // Fazendo deposito negativo
-// conta1.saque(50000)  // Fazendo saque com valor maior que o saldo
-// conta1.deposito(-10000)  // Depositando valor negativo
-// conta1.extrato()     // Olhando o extrato
-// // conta1.saque(-500)  // Fazendo saque negativo
-// // conta1.transferencia(2000, conta2)
-
 
 
 module.exports = Conta;
