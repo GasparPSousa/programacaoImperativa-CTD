@@ -25,10 +25,11 @@ function Conta(numeroDaConta, saldo, nomeDoTitular) {
         // Verificando se o valor do saque zero ou negativo.
         if (valor <= 0) {
             console.log("Não é possível fazer saque negativo. Favor inserir um valor positivo.")
-
+            return false;
         // Verificando se existe saldo suficiente na conta para sacar.
         } else if (valor > this.saldo) {
             console.log("Fundos Insuficientes")
+            return false
 
         // Fazendo a operação saque e imprimindo na tela o valor do saque e o saldo atualizado.
         } else {
@@ -46,12 +47,15 @@ function Conta(numeroDaConta, saldo, nomeDoTitular) {
         console.log('===========================')
     };
 
-    // Criando o método transferência -  Preciso terminar essa parte
-    // this.transferencia = function(valor, conta) {
-    //     valorTransferido = this.saque(valor)
-    //     conta.deposito(valorTransferido)
+    //Criando o método transferência -  Preciso terminar essa parte
+    this.transferencia = function(valor, conta) {
+        let saque = this.saque(valor)
+        if (typeof(saque == Boolean) && !saque){
+            return 'Não é possível fazer essa transferência'
+        }
+        conta.deposito(valor)
 
-    // }
+    }
     
 }
 

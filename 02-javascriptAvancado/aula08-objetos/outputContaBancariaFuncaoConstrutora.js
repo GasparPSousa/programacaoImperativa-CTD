@@ -40,3 +40,8 @@ conta3.saque(50000)  // Fazendo saque com valor maior que o saldo
 conta3.deposito(-10000)  // Depositando valor negativo
 conta3.extrato()     // Olhando o extrato
 conta3.saque(-500)  // Fazendo saque negativo
+console.log('Testando a função emprestimo')
+conta1.transferencia(500, conta2)
+conta1.transferencia(-1000, conta2)
+conta1.transferencia(100000, conta2)
+
