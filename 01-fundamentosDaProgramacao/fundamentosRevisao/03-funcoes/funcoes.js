@@ -17,5 +17,5 @@ function comerPizza(quantidade) {
 console.log(multiplicar(6,784))
 console.log(tomarCerveja(6))
 console.log(comerPizza(8))
-console.log(`Daqui a pouco vou tomar umas ${tomarCerveja(3)} cervajas e com umas ${comerPizza(2)} pizzas`)
+console.log(`Daqui a pouco vou tomar umas ${tomarCerveja(3)} cervejas e com umas ${comerPizza(2)} pizzas`)
 
