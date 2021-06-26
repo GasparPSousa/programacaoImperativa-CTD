@@ -1,7 +1,13 @@
 var linguagem = "javascript";
 
-if (linguagem == "javascript") {
-    console.log("Estou aprendendo")
-} else {
-    console.log("Aprenderei mais tarde")
+function estudar(linguagem) {
+
+    if (linguagem == "javascript") {
+        return 'Estou aprendendo'
+    } else {
+        return 'Aprenderei mais tarde'
+    }
 }
+
+console.log(estudar('javascript'))
+console.log(estudar('python'))
