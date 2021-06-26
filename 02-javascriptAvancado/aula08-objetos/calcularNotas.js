@@ -1,4 +1,4 @@
-function CalcularNotas(nome, numeroDoArquivo, listaDeNotas) {
+function Aluno(nome, numeroDoArquivo, listaDeNotas) {
     
     // Definindo as propriedades
     this.nome = nome;
@@ -11,12 +11,22 @@ function CalcularNotas(nome, numeroDoArquivo, listaDeNotas) {
         for (let nota of this.listaDeNotas) {
             soma += nota;
         }
-        console.log(soma)
-        return soma/this.listaDeNotas.length
-            
+        
+        return soma/this.listaDeNotas.length  
+    }
+
+    this.verificarStatus = function(calcularMedia) {
+        if (this.calcularMedia() >= 7) {
+            return `${this.nome} teve média ${this.calcularMedia()} e está Aprovado(a)!`
+        } else {
+            return `${this.nome} teve média ${this.calcularMedia()} e está Reprovado(a).`
+        }
     }
 }
 
-let notas1 = new CalcularNotas('zezinho', 45687, [8, 6, 4, 6])
+let notas1 = new Aluno('Joaozinho', 45687, [8, 7, 10, 9])
+let notas2 = new Aluno('Mariazinha', 45687, [8, 5, 4, 6])
 
-console.log(notas1.calcularMedia())
+
+console.log(notas1.verificarStatus())
+console.log(notas2.verificarStatus())
