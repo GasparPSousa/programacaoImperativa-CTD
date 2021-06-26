@@ -1,6 +1,6 @@
 // Arrow Functions
 
-// Estrutura Básica
+// Estrutura Básica de uma função normal
 
 function multiplicar(a, b) {
     return a * b
