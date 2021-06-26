@@ -25,6 +25,8 @@ let tenista = {
 
 }
 
+
+// Acessando as propriedades e métodos
 console.log(tenista.nome)
 console.log(tenista.sobrenome)
 console.log(tenista.idade)
