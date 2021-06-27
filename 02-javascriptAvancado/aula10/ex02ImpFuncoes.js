@@ -12,3 +12,6 @@ console.log(calculadora.dividir(2, 0))
 // ==========
 
 calculadora.maiuscula('gaspar')
+
+// Caso queira ver tudo que tem modulo calculadora
+console.log(calculadora)
