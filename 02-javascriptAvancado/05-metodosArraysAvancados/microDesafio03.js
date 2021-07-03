@@ -13,4 +13,4 @@ let numbers = [1, 5, 9, 3, 7]
 
 let numbersFormatted = numbers.reduce((acc, number) => `${acc}-${number}`)
 
-console.log(numbersFormatted)
+console.log(`"${numbersFormatted}"`)
