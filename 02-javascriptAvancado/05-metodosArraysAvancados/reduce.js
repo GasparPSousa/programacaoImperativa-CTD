@@ -1,10 +1,10 @@
 /* Reduce()
 
-Este método pecorre o array e retorna um único valor.
+Este método pecorre o array e retorna UM ÚNICO valor.
 
-Ele recebe uma callback para ser executada em cada elemento do array.
+Ele recebe uma CALLBACK para ser executada em CADA ELEMENTO do array.
 
-Este, por sua vez, recebe dois parâmetros: Um acumulador e o elemento atual que está percorrendo.
+ESTA, por sua vez, recebe dois parâmetros: Um acumulador e o elemento atual que está percorrendo.
 
 
  */
