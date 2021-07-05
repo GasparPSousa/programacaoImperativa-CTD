@@ -42,10 +42,10 @@ console.log(produtos)
 
 // Item 2
 
-const carrinho = produtos.filter((produto) => {
-    const valor = produto.valorDoProduto;
-    const qualidade = produto.qualidadeDoProduto;
-    const status = produto.status;
+const carrinho = produtos.filter((item) => {
+    const valor = item.valorDoProduto;
+    const qualidade = item.qualidadeDoProduto;
+    const status = item.status;
 
     const itensSelecionados = (valor >= 482 && valor <= 1600) && (qualidade >= 60) && (status == true);
 
@@ -56,7 +56,17 @@ const carrinho = produtos.filter((produto) => {
 console.log('\nDo carrinho')
 console.log(carrinho)
 
+// Item 3
 
+carrinho.forEach((item) => {
+    console.log(`\nProduto: ${item.nomeDoProduto}`);
+    console.log(`Valor: R$ ${item.valorDoProduto}`);
+    console.log("=================================")
+})
 
+const valorTotal = carrinho.reduce((acc, item) => {
+    return acc.valorDoProduto + item.valorDoProduto;
+})
 
+console.log(`\nValor Total: R$ ${valorTotal}`)
 
