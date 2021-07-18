@@ -39,30 +39,51 @@ console.log(calculator(10, divide, 0))
 
 */
 
-function init() {
-    var name = 'Mozilla'
+// function init() {
+//     var name = 'Mozilla'
 
-    function displayName() {
-        alert(name)
+//     function displayName() {
+//         alert(name)
+//     }
+
+//     displayName()
+// }
+
+// init()
+
+
+// function makeFunc() {
+//     var name = "Gaspar";
+//     function displayName() {
+//       alert(name);
+//     }
+//     return displayName;
+//   }
+  
+//   var myFunc = makeFunc();
+//   myFunc();
+
+
+
+// Recursividade
+
+/* 
+  Recursividade - Se aplica quando uma função invoca ela mesma. 
+  É muito utilizado para chamar a mesma tarefa várias vezes, parecido com um loop(ciclo)
+
+*/
+
+
+function countDown(number) {
+    
+    console.log(number);
+
+    let nextNumber = number - 1;
+
+    if (nextNumber >= 0) {
+        countDown(nextNumber)
     }
 
-    displayName()
 }
 
-init()
-
-
-function makeFunc() {
-    var name = "Gaspar";
-    function displayName() {
-      alert(name);
-    }
-    return displayName;
-  }
-  
-  var myFunc = makeFunc();
-  myFunc();
-
-
-
-
+countDown(10)
